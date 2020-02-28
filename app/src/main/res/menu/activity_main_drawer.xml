@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_survey_saya"
+            android:icon="@drawable/ic_surveyku"
+            android:title="Survey Saya" />
+        <item
+            android:id="@+id/nav_daftar_survey"
+            android:icon="@drawable/ic_logo_mini"
+            android:title="Panduan" />
+    </group>
+
+    <item android:title="Lain - lain">
+        <menu>
+            <item
+                android:id="@+id/nav_call"
+                android:icon="@drawable/ic_perm_phone_msg_black_24dp"
+                android:title="Hubungi Konseler" />
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="Tentang Aplikasi" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Keluar" />
+        </menu>
+    </item>
+
+</menu>
+
+

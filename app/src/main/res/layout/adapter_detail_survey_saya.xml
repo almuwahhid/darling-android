@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="@dimen/dimen_8dp"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardElevation="@dimen/dimen_2dp"
+        app:cardCornerRadius="@dimen/dimen_24dp"
+        android:layout_width="@dimen/dimen_48dp"
+        android:layout_height="@dimen/dimen_48dp">
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/lay_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/tv_index"
+                android:textStyle="bold"
+                android:text="1"
+                android:textSize="@dimen/dimen_32dp"
+                style="@style/Text.Title.OneRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_lay"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_2dp"
+        android:layout_marginBottom="@dimen/dimen_2dp"
+        app:cardElevation="@dimen/dimen_2dp"
+        app:cardBackgroundColor="@color/white"
+        app:contentPadding="@dimen/dimen_8dp"
+        app:cardCornerRadius="@dimen/dimen_4dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/clickable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_centerVertical="true"
+                    style="@style/Text.Standard"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:lines="3"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel purus vel mauris fermentum lacinia a vitae neque. Morbi faucibus lectus diam, sit amet placerat tortor vulputate in. Duis euismod elit ac risus feugiat, a venenatis dui aliquet. In eget felis congue, pellentesque leo eu, vehicula ipsum. Integer sodales nunc nec lacus dictum facilisis. Aenean nibh nulla, efficitur sed lectus ut, rutrum dignissim ex. Proin lobortis lectus venenatis dolor faucibus, at scelerisque lacus molestie. Phasellus et neque vitae enim tempus ornare. Mauris rutrum varius accumsan. Duis diam metus, cursus sit amet ligula vulputate, euismod rhoncus enim. Phasellus vitae tristique dui. Nam nulla odio, pretium quis tellus sed, viverra dignissim dolor. Vestibulum elementum et mauris at lacinia. Sed quis nibh eu mi pharetra fringilla. Curabitur convallis, tellus sit amet pharetra venenatis, neque elit varius libero, vel tempor nisl libero id diam. Suspendisse potenti."
+                    android:layout_toLeftOf="@id/lay_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/dimen_14dp"
+                    android:layout_height="@dimen/dimen_14dp"
+                    android:src="@drawable/ic_coin"/>
+                <TextView
+                    android:id="@+id/tv_skor"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_4dp"
+                    android:text="Skor : 4"
+                    style="@style/Text.Caption.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

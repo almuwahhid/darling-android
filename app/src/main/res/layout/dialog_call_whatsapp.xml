@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/dimen_16dp"
+    android:id="@+id/lay_dialog"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/Text.Title.Banner"
+                android:text="Informasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_close"
+                style="@style/clickable"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:padding="@dimen/dimen_8dp"
+            style="@style/Text.Standard"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jika Anda membutuhkan informasi dan konsultasi lebih lanjut tentang usaha pengembahan status identitas dating dapat menghubungi kontak konseler"/>
+
+        <android.support.v7.widget.CardView
+            style="@style/clickable"
+            android:id="@+id/card_wa"
+            android:layout_margin="@dimen/dimen_2dp"
+            android:layout_gravity="center_horizontal"
+            app:cardElevation="@dimen/dimen_2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="@dimen/dimen_8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/button_gradient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:tint="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_call_black_24dp"/>
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="Hubungi Konseler"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

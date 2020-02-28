@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.ac.uny.riset.darling">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:name="lib.almuwahhid.SuperUser.RequestHandler"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/ToolBarTheme">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <receiver
+            android:name="id.ac.uny.riset.darling.Service.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="id.ac.uny.riset.darling.Service.CheckIntervensiJobScheduler"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <activity
+            android:name="id.ac.uny.riset.darling.menu.main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="id.ac.uny.riset.darling.menu.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="id.ac.uny.riset.darling.menu.register.RegisterActivity" />
+        <activity android:name="id.ac.uny.riset.darling.menu.main.adapter.AdapterTaskPertanyaan" />
+        <activity android:name="id.ac.uny.riset.darling.menu.surveySaya.SurveySayaActivity" />
+        <activity android:name="id.ac.uny.riset.darling.menu.surveySaya.adapter.AdapterSurveySaya" />
+        <activity android:name="id.ac.uny.riset.darling.menu.info.InfoActivity" />
+        <activity android:name="id.ac.uny.riset.darling.menu.survey.SurveyActivity" />
+        <activity android:name="id.ac.uny.riset.darling.menu.detailSurveySaya.DetailSurveySayaActivity" />
+        <activity android:name="id.ac.uny.riset.darling.menu.about.AboutActivity" />
+        <activity android:name="id.ac.uny.riset.darling.menu.panduan.PanduanActivity" />
+        <activity android:name="id.ac.uny.riset.darling.menu.pertanyaanSaya.PertanyaanSayaActivity" />
+        <activity android:name="id.ac.uny.riset.beres.menu.grafik.GrafikActivity" />
+        <activity android:name="id.ac.uny.riset.darling.menu.biodata.BiodataActivity"></activity>
+    </application>
+
+</manifest>
